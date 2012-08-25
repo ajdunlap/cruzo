@@ -1,0 +1,45 @@
+body {
+  background: #efdecd;
+}
+table.crossword-grid {
+  background: white;
+  border-collapse: collapse;
+  color: black;
+}
+table.crossword-grid td {
+  border: 1px solid black;
+}
+table.crossword-grid td {
+  height: 1.5em;
+  width: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+}
+table.crossword-grid td.crossword-grid-square.focused {
+  background: #efccaa;
+}
+table.crossword-grid td.crossword-grid-square.focused-secondary {
+  background: #ffdcca;
+}
+table.crossword-grid td.crossword-grid-square.two {
+  background: red;
+}
+table.crossword-grid td.crossword-grid-square.black {
+  background: black;
+}
+table.crossword-grid td.crossword-grid-square span.crossword-grid-number {
+  font-size: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1em;
+}
+table.crossword-grid td.crossword-grid-square.changed { border-style: dotted; }
+table.crossword-grid td.crossword-grid-square.below-changed { border-bottom-style: dotted; }
+table.crossword-grid td.crossword-grid-square.above-changed { border-top-style: dotted; }
+table.crossword-grid td.crossword-grid-square.left-changed { border-left-style: dotted; }
+table.crossword-grid td.crossword-grid-square.right-changed { border-right-style: dotted; }
+
+/* vim: set filetype=css : */

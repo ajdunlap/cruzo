@@ -1,0 +1,5 @@
+dist
+cabal-dev
+cruzo.sqlite3
+static/tmp
+*.swp

@@ -1,0 +1,3 @@
+<form method=post href=@{NewR} enctype=#{enctype}>
+  ^{form}
+  <input type=submit>

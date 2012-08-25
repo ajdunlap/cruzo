@@ -1,0 +1,11 @@
+<h1>_{MsgHello}
+
+<p>Hi there, #{u}
+<p>
+  <a href=@{AuthR LoginR}>Log in
+  <form href=@{NewR} method=post><input type=submit>New
+
+<ul>
+  $forall puz <- puzzles
+    <li>
+      #{show $ entityKey puz}

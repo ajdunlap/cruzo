@@ -1,0 +1,13 @@
+<table .crossword-grid>
+  $forall r <- enumFromTo 0 (subtract 1 rows)
+    <tr .crossword-grid-row>
+      $forall c <- enumFromTo 0 (subtract 1 cols)
+        <td .crossword-grid-square data-col=#{c} data-row=#{r}>
+          <span .crossword-grid-number>
+          <span .crossword-grid-letter>
+
+<div .clues #across-clues>
+  <ul>
+
+<div .clues #down-clues>
+  <ul>

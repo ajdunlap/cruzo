@@ -1,0 +1,20 @@
+Default: &defaults
+  database: cruzo.sqlite3
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: cruzo_test.sqlite3
+  <<: *defaults
+
+Staging:
+  database: cruzo_staging.sqlite3
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: cruzo_production.sqlite3
+  poolsize: 100
+  <<: *defaults
